@@ -3,4 +3,3 @@ pandas
 Pillow
 streamlit
 matplotlib
-random
