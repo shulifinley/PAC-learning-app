@@ -1,9 +1,7 @@
 import streamlit as st
 import circlesMain
-# import rectanglesMain
 import introductionMain
 import experimentsMain
-# plt.rcParams['figure.figsize'] = [10, 5]
 
 add_footer="""
 <style>
