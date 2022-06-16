@@ -6,6 +6,7 @@ import auxiliaryCircles
 import introductionMain
 from PIL import Image
 from math import floor
+import random
 
 
 def show_circles_home_topic():
