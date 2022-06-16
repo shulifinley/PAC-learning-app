@@ -178,7 +178,7 @@ def main():
         if isclick:
             if st.session_state['radio_option'] == topics[i]:
                 st.session_state.radio_option = topics[i+1]
-                if i == len(topics)-1 :
+                if i == len(topics)-2 :
                     if isclick:
                         placeholder.empty()
                 break
