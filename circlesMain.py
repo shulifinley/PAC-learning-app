@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import auxiliaryCircles
 import introductionMain
-import random
 from PIL import Image
 from math import floor
 
