@@ -38,7 +38,7 @@ def show_overview_topic():
     
     try:
         sample_complexity = auxiliaryCircles.compute_sample_complexity(eps_interactive, 1-delt_interactive)
-    except:
+    except UnboundLocalError:
             st.error('Note that $\epsilon$ and $\delta$ must be greater than $0$!')
             
     sample_complexities = [floor(0.5 * sample_complexity),
