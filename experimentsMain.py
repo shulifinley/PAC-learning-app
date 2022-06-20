@@ -40,7 +40,7 @@ def show_overview_topic():
     if delt_interactive == 0:
         st.warning('Note that $\delta$ must be greater than $0$!')
     
-    sample_complexity = auxiliaryCircles.compute_sample_complexity(eps_interactive, 1 - delt_interactive)
+    sample_complexity = auxiliaryCircles.compute_sample_complexity(eps_interactive, delt_interactive)
 
     sample_complexities = [floor(0.5 * sample_complexity),
                            floor(0.75 * sample_complexity),
