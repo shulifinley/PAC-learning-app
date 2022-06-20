@@ -33,10 +33,10 @@ def show_overview_topic():
     st.info('Consider the concept $c=c(r=1)$.  \n'
             'Fix error and confidence parameters ($\epsilon$ and $1-\delta$) using the sliders below, and observe the calculated sufficient number of samples, $m$.')
     r=1
-    eps_interactive = st.slider("Desired error $\epsilon$:", 0.0, 0.2, 0.05, 0.01)
+    eps_interactive = st.slider("Desired error ϵ:", 0.0, 0.2, 0.05, 0.01)
     if eps_interactive == 0:
         st.warning('Note that $\epsilon$ must be greater than $0$!')
-    delt_interactive = st.slider("Desired confidence $1-\delta$:", 0.0, 1.0, 0.95, 0.01)
+    delt_interactive = st.slider("Desired confidence 1−δ:", 0.0, 1.0, 0.95, 0.01)
     if delt_interactive == 0:
         st.warning('Note that $\delta$ must be greater than $0$!')
     
