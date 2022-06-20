@@ -35,11 +35,11 @@ def show_overview_topic():
     r=1
     try:
         eps_interactive = st.slider("Desired error ϵ:", 0.0, 0.5, 0.05, 0.01)
-    except ValueError:
+    except OverflowError:
         st.error('Note that $\epsilon$ must be greater than $0$!')
     try:    
         delt_interactive = st.slider("Desired confidence 1−δ:", 0.0, 0.99, 0.95, 0.01)
-    except ValueError:
+    except OverflowError:
         st.error('Note that $\delta$ must be greater than $0$!')
     
     sample_complexity = auxiliaryCircles.compute_sample_complexity(eps_interactive, 1-delt_interactive)
