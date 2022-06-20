@@ -34,12 +34,11 @@ def show_overview_topic():
             'Fix error and confidence parameters ($\epsilon$ and $1-\delta$) using the sliders below, and observe the calculated sufficient number of samples, $m$.')
     r=1
     eps_interactive = st.slider("Desired error ϵ:", 0.0, 0.5, 0.05, 0.01)
-    st.error('Note that $\epsilon$ must be greater than $0$!')
     delt_interactive = st.slider("Desired confidence 1−δ:", 0.0, 0.99, 0.95, 0.01)
     
     try:
         sample_complexity = auxiliaryCircles.compute_sample_complexity(eps_interactive, 1-delt_interactive)
-    except OverflowError:
+    except:
             st.error('Note that $\epsilon$ and $\delta$ must be greater than $0$!')
             
     sample_complexities = [floor(0.5 * sample_complexity),
