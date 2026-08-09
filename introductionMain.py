@@ -7,8 +7,9 @@ def show_intro_home():
     Show the Probably Approximately Correct (PAC) framework topic.
     '''
     st.header('Introduction Overview')
-    st.info('In this section we give definitions, explain the general PAC learning framework, and give examples of PAC learning scenarios.  \n'
-        'The PAC learning framework is a purely theoretical framework for analyzing sample complexity in the context of learning.')
+    st.info('Welcome to the PAC (Probably Approximately Correct) Learning App, developed for the Introduction to Machine Learning Bsc and MSc course at Reichman University. \n' 
+            'In this section we give definitions, explain the general PAC learning framework, and give examples of PAC learning scenarios.  \n'
+            'The PAC learning framework is a purely theoretical framework for analyzing sample complexity in the context of learning.')
 
     st.info('For a precise and detailed discussion of PAC learning, see Shai Shalev-Shwartz\'s and Shai Ben-David\'s [Understanding Machine Learning: From Theory to Algorithms](http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning), '
             'and Valiant\'s paper which first introduces PAC learning, [A Theory of the Learnable](https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf), '
